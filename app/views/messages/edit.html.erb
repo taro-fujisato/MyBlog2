@@ -4,3 +4,5 @@
 
 <%= link_to 'Show', @message %> |
 <%= link_to 'Back', messages_path %>
+
+before_action :set_message, only: [:show, :edit, :update, :destroy]
